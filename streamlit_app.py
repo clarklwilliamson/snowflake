@@ -45,7 +45,6 @@ streamlit.write('you entered ', add_fruit)
 if len(add_fruit) > 0:
     new_my_data_row = my_data_row.append(add_fruit)
     streamlit.write(new_my_data_row)
+    streamlit.dataframe(new_my_data_row)
 else:
     streamlit.warning("Enter Fruit")
-
-streamlit.dataframe(new_my_data_row)
