@@ -41,5 +41,5 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_row)
 
 snow_fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_data_row.index), ['avocado', 'strawberry'])
-snow_fruits_to_show = my_fruit_list.loc[fruits_selected]
+snow_fruits_to_show = snow_fruits_selected.loc[fruits_selected]
 streamlit.dataframe(snow_fruits_to_show)
