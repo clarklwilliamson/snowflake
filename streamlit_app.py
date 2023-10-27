@@ -41,7 +41,7 @@ except URLError as e:
 
 streamlit.write('The user entered ', fruit_choice)
 
-streamlit.stop()
+#streamlit.stop()
 streamlit.header("The fruit load list contains:")
 #snowflake-related functions
 def get_fruit_load_list():
